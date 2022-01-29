@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Order Book System</title>
+</head>
+<style type="text/css">
+    body{
+        background-image: url('dbs.pngc');
+        background-color: black;
+        background-repeat: no-repeat ;
+        background-attachment: fixed;
+        background-size: cover;
+        
+    }
+    
+</style>
+</head>
+<body>
+    <form action="saveOrder" method="POST">
+    <h1 style="color:red">BOOK ORDER --- CUSTOMER ORDER</h1>
+    <form
+    <label><span style="background-color: red">SEARCH BOOK </span></label><br>
+ 
+    <select name="stocks">
+        <option value="DBS">DBS</option>
+        <option value="INFOSYS">INFOSYS</option>
+        <option value="TCS">TCS</option>
+    </select>
+    <br>
+    <br>
+    <label><span style="background-color: red">TYPE</span></label><br>
+    <br>
+    <select name="type">
+        <option value="limited">Limited</option>
+        <option value="market">Market</option>
+    </select>
+    <br> <br>
+    <label><span style="background-color: red">PRICE</span></label><br>
+    <br>
+    <input type="text" name="price" min>Integer<br><br>
+    <label><span style="background-color:red ">QUANTITY</span></label><br><br>
+    <input type="text" name="qty" min="0" max="1000"><br>
+    <br>
+    <input type="submit" background-color="red" value="PLACE ORDER">
+    </form>
+</body>
+</html>
